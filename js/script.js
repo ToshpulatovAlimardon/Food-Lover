@@ -13,11 +13,24 @@ window.addEventListener("DOMContentLoaded", () => {
     })
   }
 
-  function showTabContent(index) {
+  function showTabContent(index = 0) {
     tabContents[index].style.display = 'flex'
     tabs[index].classList.add('tabheader__item_active')
   }
 
   hideTabContents();
   showTabContent(1);
+
+  tabParents.addEventListener("click", event => {
+    const target = event.target
+
+    if(target && target.classList.contains('tabheader__item')) {
+      tabs.forEach((tab, index) => {
+        if (target === tab) {
+          hideTabContents()
+          showTabContent(index)
+        }
+      })
+    }
+  })
 })
