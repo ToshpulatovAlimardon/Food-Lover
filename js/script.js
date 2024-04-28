@@ -1,4 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
+  // Tabs
+
   const tabs = document.querySelectorAll(".tabheader__item"),
     tabContents = document.querySelectorAll(".tab_content"),
     tabParents = document.querySelector(".tabheader__items");
@@ -35,4 +37,11 @@ window.addEventListener("DOMContentLoaded", () => {
       });
     }
   });
+
+  // Loader
+  const loaderWrapper = document.querySelector(".loader-wrapper");
+
+  setTimeout(() => {
+    loaderWrapper.style.display = "none";
+  }, 1500);
 });
