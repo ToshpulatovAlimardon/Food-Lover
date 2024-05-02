@@ -108,6 +108,7 @@ window.addEventListener("DOMContentLoaded", () => {
     modal.classList.add("show");
     modal.classList.remove("hide");
     document.body.style.overflow = "hidden";
+    clearInterval(modalTimerId);
   }
 
   function closeModal() {
@@ -133,4 +134,6 @@ window.addEventListener("DOMContentLoaded", () => {
       closeModal();
     }
   });
+
+  const modalTimerId = setTimeout(openModel, 4000);
 });
