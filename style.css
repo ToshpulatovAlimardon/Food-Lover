@@ -918,8 +918,10 @@ form button {
 	transform-origin: 170px 0;
 	z-index: 10;
 	perspective: 300px;
-
+	display: block;
+	margin: 0 auto;
 }
+
 .loader::before {
 content: '';
 position: absolute;
