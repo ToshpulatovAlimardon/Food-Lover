@@ -150,7 +150,7 @@ window.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  const modalTimerId = setTimeout(openModal, 50000);
+  const modalTimerId = setTimeout(openModal, 5000);
 
   // Class
 
