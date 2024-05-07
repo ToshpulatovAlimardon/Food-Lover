@@ -1,0 +1,13 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "- HTML5\r - Css3\r - can you view [my Project](https://toshpulatovalimardon.github.io/Food-Lover/)\r # Author \r (2024) Toshpo'latov Alimardon",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alimardon Toshpulatov",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
+}
